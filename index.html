@@ -2,44 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Find Out If You Qualify for Debt Relief</title>
+  <title>Debt Relief Quiz</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    
-</header>
   <div class="container">
-    <h1>Do You Qualify for Debt Relief?</h1>
 
-    <div class="question" id="step1">
-      <p>1. How much total unsecured debt do you have?</p>
-      <button data-next="step2">Less than $5,000</button>
-      <button data-next="step2">Between $5,000 - $10,000</button>
-      <button data-next="step2">More than $10,000</button>
+    <h1 class="headline">
+      Struggling with $10,000+ in Credit Card Debt?
+    </h1>
+
+    <div class="quiz-step" id="q1">
+      <p>Do you owe more than $10,000?</p>
+      <button class="btn" data-next="q2">Yes</button>
+      <button class="btn-outline" data-next="q2">No</button>
     </div>
 
-    <div class="question" id="step2" style="display: none;">
-      <p>2. Are you behind on any payments?</p>
-      <button data-next="step3">Yes</button>
-      <button data-next="step3">No</button>
+    <div class="quiz-step" id="q2" style="display: none;">
+      <p>Are you behind on payments?</p>
+      <button class="btn" data-next="q3">Yes</button>
+      <button class="btn-outline" data-next="q3">No</button>
     </div>
 
-    <div class="question" id="step3" style="display: none;">
-      <p>3. What’s your employment status?</p>
-      <button data-next="result">Employed</button>
-      <button data-next="result">Unemployed</button>
-      <button data-next="result">Self-employed</button>
+    <div class="quiz-step" id="q3" style="display: none;">
+      <p>Are you currently employed?</p>
+      <button class="btn" data-next="q4">Yes</button>
+      <button class="btn-outline" data-next="q4">No</button>
     </div>
 
-    <div class="result" id="result">
-      <h2>You're likely to qualify!</h2>
-      <p>Call now to speak with a certified debt expert and get your free consultation:</p>
+    <div class="quiz-step" id="q4" style="display: none;">
+      <p>Would you like to speak with a debt expert today?</p>
+      <button class="btn" data-next="result">Yes</button>
+      <button class="btn-outline" data-next="result">No</button>
+    </div>
+
+    <div id="result" style="display: none;" class="result-block">
+      <h2>You may qualify for a custom debt relief plan.</h2>
+      <p>Call now to speak with a certified debt expert:</p>
       <a href="tel:+18001234567">
-        <button class="call-now"> Call Now</button>
+        <button class="btn-call">📞 Call Now</button>
       </a>
+      <ul class="trust-indicators">
+        <li>No upfront cost</li>
+        <li>No credit impact</li>
+        <li>Licensed debt relief specialists</li>
+      </ul>
     </div>
+
   </div>
 
   <script src="script.js"></script>

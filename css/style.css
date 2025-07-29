@@ -369,3 +369,11 @@ h1 {
         height: 6px; /* Меньшая высота на мобильных */
     }
 }
+
+
+footer {
+      text-align: center;
+      font-size: 0.8rem;
+      padding: 20px;
+      color: #aaa;
+    }

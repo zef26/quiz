@@ -108,5 +108,13 @@
 </div>
 
 <script src="./js/script.js"></script>
+
+<script>
+  function trackQuizStart() {
+    fbq('trackCustom', 'QuizStarted');
+    console.log('✅ Meta Pixel Event Sent: QuizStarted');
+  }
+</script>
+
 </body>
 </html>

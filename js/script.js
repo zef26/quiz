@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+
+    function trackQuizStart() {
+    fbq('trackCustom', 'QuizStarted'); // Отслеживание события Facebook Pixel
+    console.log('Quiz started'); // Для отладки в консоли
+}
     let showResult = false;
 
     const step1Buttons = document.querySelectorAll('#step1 button');

@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-
-    
     let showResult = false;
 
     const step1Buttons = document.querySelectorAll('#step1 button');
@@ -26,6 +24,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 step2.style.transition = 'opacity 0.3s ease-out';
                 setTimeout(() => {
                     step2.style.display = 'none';
+
+                    // ✅ Отправка событий Meta Pixel после второго вопроса
+                    fbq('trackCustom', 'QuizCompleted');
+                    fbq('trackCustom', 'PhoneReveal');
+                    console.log('✅ Pixel events: QuizCompleted & PhoneReveal');
+
                     startFinalSequence(); // запуск финальной логики
                 }, 300);
             }

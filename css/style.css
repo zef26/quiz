@@ -323,12 +323,17 @@ h1 {
         width: 100%;
         text-align: center;
     }
+    .head-call {
+        display: none;
+    }
 
-    .btn_head a {
+    #quis {
         display: flex;
         justify-content: center;
         align-items: center;
+    
     }
+    
 
     h1 {
         font-size: 1.8rem;

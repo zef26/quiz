@@ -1,5 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    let quiz = document.querySelector('#quis');
+    let headCall = document.querySelector('.head-call')
+
+
+   
+    console.log(quiz , headCall);
+    
+
     let showResult = false;
 
     const step1Buttons = document.querySelectorAll('#step1 button');
@@ -89,6 +97,9 @@ document.addEventListener('DOMContentLoaded', function () {
                             result.style.opacity = '0';
                             result.style.transform = 'translateY(20px)';
                             result.style.transition = 'opacity 0.5s ease-in, transform 0.5s ease-in';
+                             quiz.style.display = 'none';
+                            headCall.style.display = 'block'
+                            
                             setTimeout(() => {
                                 result.classList.add('show');
                                 result.style.opacity = '1';

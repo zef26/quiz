@@ -13,6 +13,9 @@ header {
     justify-content: space-between;
     margin-bottom: 10px;
 }
+.head-call {
+    display: none;
+}
 
 .container {
     width: 768px;

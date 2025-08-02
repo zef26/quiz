@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     console.log('✅ Pixel events: QuizCompleted & PhoneReveal');
 
                     startFinalSequence(); // запуск финальной логики
-                }, 300);
+                }, 100);
             }
         });
     });
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     currentStep.style.opacity = '1';
                     currentStep.style.transform = 'translateY(0)';
                 }, 50);
-                setTimeout(showNextStep, 800);
+                setTimeout(showNextStep, 100);
                 current++;
             } else {
                 setTimeout(() => {
@@ -107,8 +107,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 result.scrollIntoView({ behavior: 'smooth', block: 'start' });
                             }, 50);
                         }
-                    }, 500);
-                }, 800);
+                    }, 100);
+                }, 100);
             }
         }
 
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         next.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }, 50);
                 }
-            }, 300);
+            }, 100);
         }
     }
 

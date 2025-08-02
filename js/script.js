@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     currentStep.style.opacity = '1';
                     currentStep.style.transform = 'translateY(0)';
                 }, 50);
-                setTimeout(showNextStep, 1500);
+                setTimeout(showNextStep, 800);
                 current++;
             } else {
                 setTimeout(() => {
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             }, 50);
                         }
                     }, 500);
-                }, 1000);
+                }, 800);
             }
         }
 

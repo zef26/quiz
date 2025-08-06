@@ -386,3 +386,9 @@ footer {
       padding: 20px;
       color: #aaa;
     }
+
+    .title-blue {
+        text-decoration: underline;
+        color: blue;
+        font-weight: 700;
+    }

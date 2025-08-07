@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 setTimeout(() => {
                     step2.style.display = 'none';
 
-                    // ✅ Отправка событий Meta Pixel после второго вопроса
+                    
                     fbq('trackCustom', 'QuizCompleted');
                     fbq('trackCustom', 'PhoneReveal');
                     console.log('✅ Pixel events: QuizCompleted & PhoneReveal');
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
         ].filter(step => step);
         const result = document.getElementById('result-block');
 
-        if (!loading || steps.length !== 3) return;
+        if (!loading || steps.length !== 3) return ;
 
         loading.style.display = 'block';
         loading.style.opacity = '0';
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
 
-        // Подготовка анимаций
+        
         steps.forEach((step) => {
             step.style.transition = 'opacity 0.5s ease-in, transform 0.5s ease-in';
             step.style.transform = 'translateY(20px)';
@@ -158,3 +158,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+
